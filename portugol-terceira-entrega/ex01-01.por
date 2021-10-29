@@ -24,7 +24,7 @@ programa
 
 		para(cont = 1; cont <= quantHab; cont++) {
 
-			escreva("\nInsira o salário do indivíduo: ")
+			escreva("\nInsira o salário do indivíduo número ", cont, ": ")
 			leia(salarioInd)
 			salarioTotal = salarioInd + salarioTotal
 
@@ -35,7 +35,7 @@ programa
 					contSalarioMaior = contSalarioMaior + 1
 				}
 			
-			escreva("\nInsira a quantidade de filhos do indivíduo: ")
+			escreva("\nInsira a quantidade de filhos do indivíduo ", cont,": ")
 			leia(filho)
 			filhoTotal = filho + filhoTotal
 		}
@@ -51,7 +51,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1415; 
+ * @POSICAO-CURSOR = 633; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
