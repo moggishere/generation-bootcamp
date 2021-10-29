@@ -7,7 +7,7 @@ programa
 	funcao inicio()
 	{
 		inteiro x
-		para(x = 233; x <= 456; x++) {
+		/*para(x = 233; x <= 456; x++) {
 			enquanto(x < 300) {
 			x = x + 3
 			escreva("\n", x)
@@ -16,8 +16,14 @@ programa
 			escreva("\n", x)
 			} 
 			escreva("\n", x)
-		}
-
+		}*/
+		para(x = 233; x <=456; x = x + 5) {
+			escreva("\n", x)
+		faca {
+			x = x + 3
+			escreva("\n", x)
+		} enquanto (x < 400 e x >300)
+	}
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -25,7 +31,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 378; 
+ * @POSICAO-CURSOR = 497; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
