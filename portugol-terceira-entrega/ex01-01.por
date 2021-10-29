@@ -43,7 +43,7 @@ programa
 		escreva("\nA média dos salários é: ", mat.arredondar(salarioTotal/quantHab, 2))
 		escreva("\nA média de quantos filhos são é: ", mat.arredondar(filhoTotal/quantHab, 2))
 		escreva("\nO maior salário é: ", maiorSalario)
-		escreva("\nO percentual de pessoas com salário até R$100,00 é : ", mat.arredondar(quantHab/contSalarioMaior,3))
+		escreva("\nO percentual de pessoas com salário até R$100,00 é : ", mat.arredondar(contSalarioMaior/quantHab,3))
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -51,7 +51,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 633; 
+ * @POSICAO-CURSOR = 1432; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
