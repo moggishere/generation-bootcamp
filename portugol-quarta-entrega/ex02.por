@@ -24,6 +24,12 @@ programa
 			
 			total+=vetor[cont]
 		}
+		escreva("Os lançamentos foram:\t")
+		
+		para(cont = 0; cont < 10; cont++){
+			escreva("\t", vetor[cont], "\t")
+		}
+		
 		escreva("\nA média aritmética de todos os lançamentos foi: ", total/10)
 		escreva("\nO número de maior ocorrências foi de: ", contMaior)
 	}
@@ -33,7 +39,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 854; 
+ * @POSICAO-CURSOR = 762; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {vetor, 13, 10, 5}-{cont, 13, 21, 4}-{contMaior, 13, 27, 9};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
