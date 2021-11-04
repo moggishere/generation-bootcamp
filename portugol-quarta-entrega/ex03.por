@@ -6,6 +6,7 @@ posição das matrizes N1 e N2. */
 
 programa
 {
+	inclua biblioteca Util-->util
 	
 	funcao inicio()
 	{
@@ -13,10 +14,15 @@ programa
 
 		para(row = 0; row < 4; row++){
 			para(column = 0; column < 6; column++){
-				escreva("\nEntre com um número para a matriz N1: ")
+				/*
+				escreva("\nEntre com um número para a matriz N1: ") //caso queira inserir os valores manualmente
 				leia(N1[row][column])
 				escreva("\nEntre com um número para a matriz N2: ")
 				leia(N2[row][column])
+				*/
+				N1[row][column]=util.sorteia(0, 100)
+				N2[row][column]=util.sorteia(0, 100)
+				
 				M1[row][column] = N1[row][column] + N2[row][column]
 				M2[row][column] = N1[row][column] - N2[row][column]
 				escreva("\nM1= ", M1[row][column])
@@ -30,7 +36,7 @@ programa
 			escreva ("\n")
 		}	
 
-		escreva ("\n\n\n")
+		escreva ("\n\n")
 		
 		para(row = 0; row < 4; row++){ //imprime M2 em tabela depois que todas as diferencas de matrizes sao calculadas
 			para(column = 0; column < 6; column++){
@@ -45,7 +51,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1063; 
+ * @POSICAO-CURSOR = 595; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
