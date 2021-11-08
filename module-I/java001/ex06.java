@@ -8,13 +8,13 @@ public class ex06 {
         double distance;
         Scanner scan = new Scanner(System.in);
         System.out.println("\nInsira a coordenada x1: ");
-        x1 = scan.nextInt();
+        x1 = scan.nextDouble();
         System.out.println("\nInsira a coordenada y1: ");
-        y1 = scan.nextInt();
+        y1 = scan.nextDouble();
         System.out.println("\nInsira a coordenada x2: ");
-        x2 = scan.nextInt();
+        x2 = scan.nextDouble();
         System.out.println("\nInsira a coordenada y2: ");
-        y2 = scan.nextInt();
+        y2 = scan.nextDouble();
         scan.close();
 
         distance = Math.sqrt((x2 - x1)*(x2 - x1) + (y2 - y1)*(y2 - y1));
