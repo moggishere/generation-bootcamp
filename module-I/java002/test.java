@@ -11,8 +11,8 @@ public class test {
         System.out.println("\nInsira quantos números deseja ver na cadeia ascendente: ");
         totalUserInput = scan.nextInt();
         for (int count = 0; count < totalUserInput; count++) {
-        System.out.println("\nInsira o valor " + (count+1) + ": ");
-        numbers.add(scan.nextInt());
+            System.out.println("\nInsira o valor " + (count+1) + ": ");
+            numbers.add(scan.nextInt());
         }
         scan.close();
         Collections.sort(numbers);
