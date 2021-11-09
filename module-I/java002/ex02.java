@@ -6,7 +6,6 @@ import java.util.Arrays;
 public class ex02 {
     public static void main(String[] args) {
         int num1, num2, num3;
-        //int[] array = {num1, num2, num3};
         Scanner scan = new Scanner(System.in);
         System.out.println("\nInsira o primeiro valor:");
         num1 = scan.nextInt();
