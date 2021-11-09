@@ -5,14 +5,15 @@ import java.util.Collections;
 import java.util.List;
 public class test {
     public static void main(String[] args) {
+        int totalUserInput;
         ArrayList<Integer> numbers = new ArrayList<Integer>();
         Scanner scan = new Scanner(System.in);
-        System.out.println("\nInsira o primeiro valor:");
+        System.out.println("\nInsira quantos números deseja ver na cadeia ascendente: ");
+        totalUserInput = scan.nextInt();
+        for (int count = 0; count < totalUserInput; count++) {
+            System.out.println("\nInsira o valor " + (count+1) + ": ");
         numbers.add(scan.nextInt());
-        System.out.println("\nInsira o segundo valor:");
-        numbers.add(scan.nextInt());
-        System.out.println("\nInsira o terceiro valor:");
-        numbers.add(scan.nextInt());
+        }
         scan.close();
         Collections.sort(numbers);
         System.out.println("\nFicam em ordem crescente:");
