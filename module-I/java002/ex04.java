@@ -14,10 +14,14 @@ public class ex04 {
         scan.close();
         if (userInput%2 == 0) {
             numResult = Math.sqrt(userInput);
-            System.out.println("\nO número" + userInput +" é par e sua raiz quadrada é " + numResult);
+            int temp = (int)(numResult*100);
+            double numPrint = ((double)temp)/100.0;
+            System.out.println("\nO número" + userInput +" é par e sua raiz quadrada é " + numPrint);
         } else if (userInput%2 != 0) {
             numResult = Math.pow(userInput, 2);
-            System.out.println("\nO número" + userInput +" é ímpar e seu valor elevado ao quadrado é " + numResult);
+            int temp = (int)(numResult*100);
+            double numPrint = ((double)temp)/100.0;
+            System.out.println("\nO número" + userInput +" é ímpar e seu valor elevado ao quadrado é " + numPrint);
         }
     }
 }
