@@ -13,6 +13,7 @@ public class ex05 {
             sum+=input;
             System.out.println("\nO número inserido foi: " + input + "\nInsira outro:");
         } while(input != 0);
+        scan.close();
         System.out.println("\nA soma dos números até que foi colocado 0 é " + sum);
     }
 }
