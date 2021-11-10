@@ -2,7 +2,7 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
+//import java.util.List;
 public class ex02 {
     public static void main(String[] args) {
         int totalUserInput;
