@@ -7,17 +7,14 @@
 
 import java.util.Scanner;
 import java.util.Random;
-import java.util.ArrayList;
 
 public class ex04 {
     public static void main(String[] args) {
         int a = 0, b = 0;
         int column, row;
-        int count = 0;
         int input;
         boolean error = false;
         boolean sumArray = false;
-        ArrayList<Integer> list = new ArrayList<>();
         Random random = new Random();
         Scanner scan = new Scanner(System.in);
 
