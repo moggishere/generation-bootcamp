@@ -4,8 +4,13 @@
 // (c) Modifique o vetor na posição 4, atribuindo a esta posição o valor 100. 
 // (d) Mostre na tela cada valor do vetor A, um em cada linha.
 
+import java.util.Arrays;
 public class ex01 {
     public static void main(String[] args) {
-        
+        int [] a = {1, 0, 5, -2, -5, -7};
+        int sum = a[0] + a[1] + a[5];
+        a[4] = 100;
+        System.out.println("\nO array A vai ser:");
+        Arrays.stream(a).forEach(System.out::println);
     }
 }

@@ -16,7 +16,8 @@ public class ex03 {
         a = scan.nextInt();
         System.out.println("\nInsira quantas colunas existem dentro matriz randomizada: ");
         b = scan.nextInt();
-
+        scan.close();
+        
         int [][] array = new int[a][b];
 
         for(row = 0; row < a; row++){

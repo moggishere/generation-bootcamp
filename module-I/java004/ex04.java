@@ -5,8 +5,68 @@
 // (4) imprimir as matrizes 
 // Nas duas primeiras opções uma terceira matriz 2 x 2 deve ser criada. Na terceira opção o valor da constante deve ser lido e o resultado da adição da constante deve ser armazenado na própria matriz.
 
+import java.util.Scanner;
+import java.util.Random;
+import java.util.ArrayList;
+
 public class ex04 {
     public static void main(String[] args) {
+        int a = 0, b = 0;
+        int column, row;
+        int count = 0;
+        int input;
+        ArrayList<Integer> list = new ArrayList<>(); // usando o arrayList pois quero adicionar os numeros maiores que
+                                                     // 10 em uma lista de forma dinamica
+        Random random = new Random();
+        Scanner scan = new Scanner(System.in);
 
+        System.out.println("\nInsira quantas filas existem dentro das duas matrizes randomizadas: ");
+        a = scan.nextInt();
+        System.out.println("\nInsira quantas colunas existem dentro das duas matrizes randomizadas: ");
+        b = scan.nextInt();
+
+        int[][] array01 = new int[a][b];
+        int[][] array02 = new int[a][b];
+        int[][] array03 = new int[a][b];
+
+        for (row = 0; row < a; row++) {
+            for (column = 0; column < b; column++) {
+                array01[row][column] = random.nextInt(50);
+                array02[row][column] = random.nextInt(50);
+            }
+        }
+
+        System.out.println(
+                "\nEscolha qual das operações deseja fazer: \n1 - SOMAR AS DUAS MATRIZES\t2 - SUBTRAIR A PRIMEIRA DA SEGUNDA MATRIZ\t3 - ADICIONAR UMA CONSTANTE AS DUAS MATRIZES\t4 - IMPRIMIR AS DUAS MATRIZES");
+        input = scan.nextInt();
+        scan.close();
+
+        switch (input) {
+        case 1:
+            for (row = 0; row < a; row++) { // array03[][] = array01[][] + array02[][];
+                for (column = 0; column < b; column++) {
+                    array03[row][column] = array01[row][column] + array02[row][column];
+                }
+            }
+            break;
+        case 2:
+            for (row = 0; row < a; row++) { // array03[][] = array01[][] + array02[][];
+                for (column = 0; column < b; column++) {
+                    array03[row][column] = array01[row][column] - array02[row][column];
+                }
+            }
+            break;
+        case 3:
+
+            break;
+        case 4:
+
+            break;
+        default:
+            System.out.println("\nERRO");
+        }
+
+        System.out.println(array01);
+        System.out.println(array02);
     }
 }
