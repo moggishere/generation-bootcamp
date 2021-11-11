@@ -15,8 +15,9 @@ public class ex04 {
         int column, row;
         int count = 0;
         int input;
-        ArrayList<Integer> list = new ArrayList<>(); // usando o arrayList pois quero adicionar os numeros maiores que
-                                                     // 10 em uma lista de forma dinamica
+        boolean error = false;
+        boolean sumArray = false;
+        ArrayList<Integer> list = new ArrayList<>();
         Random random = new Random();
         Scanner scan = new Scanner(System.in);
 
@@ -39,7 +40,6 @@ public class ex04 {
         System.out.println(
                 "\nEscolha qual das operações deseja fazer: \n1 - SOMAR AS DUAS MATRIZES\t2 - SUBTRAIR A PRIMEIRA DA SEGUNDA MATRIZ\t3 - ADICIONAR UMA CONSTANTE AS DUAS MATRIZES\t4 - IMPRIMIR AS DUAS MATRIZES");
         input = scan.nextInt();
-        scan.close();
 
         switch (input) {
         case 1:
@@ -48,25 +48,77 @@ public class ex04 {
                     array03[row][column] = array01[row][column] + array02[row][column];
                 }
             }
+            sumArray = true;
             break;
         case 2:
-            for (row = 0; row < a; row++) { // array03[][] = array01[][] + array02[][];
+            for (row = 0; row < a; row++) { // array03[][] = array01[][] - array02[][];
                 for (column = 0; column < b; column++) {
                     array03[row][column] = array01[row][column] - array02[row][column];
                 }
             }
+            sumArray = true;
             break;
         case 3:
+            System.out.println("\nInsira o valor da constante: ");
+            int extra = scan.nextInt();
+            for (row = 0; row < a; row++) {
+                for (column = 0; column < b; column++) {
+                    array01[row][column]+=extra;
+                    array02[row][column]+=extra;
+                }
+            }
 
             break;
         case 4:
+            // System.out.println("\nA matriz 1 é: ");
+            // for (row = 0; row < a; row++) {
+            //     for (column = 0; column < b; column++) {
+            //         System.out.printf("%5d ", array01[row][column]);
+            //     }
+            //     System.out.println("");
+            // }
+
+            // System.out.println("\nA matriz 2 é: ");
+            // for (row = 0; row < a; row++) {
+            //     for (column = 0; column < b; column++) {
+            //         System.out.printf("%5d ", array02[row][column]);
+            //     }
+            //     System.out.println("");
+            // }
 
             break;
         default:
             System.out.println("\nERRO");
+            error = true;
         }
+        scan.close();
 
-        System.out.println(array01);
-        System.out.println(array02);
+        if(input == 4 || error == false && sumArray == false) {
+            System.out.println("\nA matriz 1 é: ");
+            for (row = 0; row < a; row++) {
+                for (column = 0; column < b; column++) {
+                    System.out.printf("%5d ", array01[row][column]);
+                }
+                System.out.println("");
+            }
+
+            System.out.println("\nA matriz 2 é: ");
+            for (row = 0; row < a; row++) {
+                for (column = 0; column < b; column++) {
+                    System.out.printf("%5d ", array02[row][column]);
+                }
+                System.out.println("");
+            }
+        } else if(sumArray == true) {
+            System.out.println("\nA matriz soma das 1 e 2 é: ");
+            for (row = 0; row < a; row++) {
+                for (column = 0; column < b; column++) {
+                    System.out.printf("%5d ", array03[row][column]);
+                }
+                System.out.println("");
+            }
+        }
+        // System.out.println(array01);
+        // System.out.println(array02);
     }
 }
