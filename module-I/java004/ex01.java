@@ -10,6 +10,7 @@ public class ex01 {
         int [] a = {1, 0, 5, -2, -5, -7};
         int sum = a[0] + a[1] + a[5];
         a[4] = 100;
+        System.out.println("\nA soma de A[0], A[1] e A[5] vai ser: " + sum);
         System.out.println("\nO array A vai ser:");
         Arrays.stream(a).forEach(System.out::println);
     }
