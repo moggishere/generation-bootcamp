@@ -7,6 +7,9 @@ public class Sloth extends Animals{
         this.climb = climb;
     }
 
+    public void cry() {
+        System.out.println("AAAA");
+    }
 
     public String getClimb() {
         return this.climb;

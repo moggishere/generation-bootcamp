@@ -7,6 +7,9 @@ public class Horse extends Animals{
         this.run = run;
     }
 
+    public void cry() {
+        System.out.println("Neigh");
+    }
 
     public String getRun() {
         return this.run;
@@ -15,5 +18,6 @@ public class Horse extends Animals{
     public void setRun(String run) {
         this.run = run;
     }
+
 
 }

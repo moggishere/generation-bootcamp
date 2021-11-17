@@ -1,4 +1,5 @@
 package AnimalKingdom;
+
 public class Animals {
     private String name;
     private String sound;
@@ -10,6 +11,9 @@ public class Animals {
         this.age = age;
     }
 
+    public void cry() {
+        System.out.println("Woof woof");
+    }
 
     public String getName() {
         return this.name;
@@ -34,5 +38,5 @@ public class Animals {
     public void setAge(int age) {
         this.age = age;
     }
-    
+
 }
