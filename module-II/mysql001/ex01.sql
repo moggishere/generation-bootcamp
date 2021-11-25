@@ -30,6 +30,7 @@ insert into tb_persons(nam, salary, cpf, vacation) values("REI REI", 15000, 1234
 insert into tb_persons(nam, salary, cpf, vacation) values("MEU PAI", 1000000, 12345678905, true);
 
 select * from tb_persons;
-
-update tb_persons set id = 4, vacation = false;
-select * from tb_persons 
+select * from tb_persons where salary<2000;
+select * from tb_persons where salary>2000;
+update tb_persons set vacation=false where id=4;
+ 
