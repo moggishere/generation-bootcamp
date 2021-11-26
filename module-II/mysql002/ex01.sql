@@ -78,3 +78,4 @@ select * from tb_personagem WHERE player_name LIKE '%c%';
 select tb_personagem.player_name, tb_classe.mp_scaling, tb_classe.hp_scaling 
 FROM tb_classe INNER JOIN tb_personagem ON tb_classe.class_name = tb_personagem.class_name;
 select * from tb_personagem WHERE class_name="WHM";
+select * from tb_personagem GROUP BY class_name="BLM";
