@@ -1,0 +1,21 @@
+tb_postagens (
+id BIGINT, // PRIMARY KEY
+titulo VARCHAR(255),
+texto VARCHAR(255),
+data DATE,
+tb_tema_id BIGINT, // FOREIGN KEY
+tb_usuario_id BIGINT, // FOREIGN KEY
+)
+
+tb_temas (
+id BIGINT, // PRIMARY KEY
+descricao VARCHAR(255)
+)
+
+tb_usuarios (
+id BIGINT, // PRIMARY KEY
+nome VARCHAR(255),
+usuario VARCHAR(255),
+senha VARCHAR(255),
+foto VARCHAR(255)
+)
