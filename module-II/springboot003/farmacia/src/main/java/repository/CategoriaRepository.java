@@ -8,5 +8,5 @@ import model.Categoria;
 
 public interface CategoriaRepository extends JpaRepository<Categoria, Long> {
 	
-    public List<Categoria> findAllByDescricaoContainingIgnoreCase(String descricao)
+    public List<Categoria> findAllByDescricaoContainingIgnoreCase(String descricao);
 }
